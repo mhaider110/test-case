@@ -107,6 +107,7 @@ function UserList() {
           <Table
             data-testid='usersTable'
             dataSource={[...users]}
+            style={{overflowX: 'scroll'}}
             columns={columns}
             rowKey={({ id }) => id}
             pagination={{
